@@ -1,4 +1,4 @@
-/* Projects Page Styles */
+/* Projects Page Styles (basis file asli - beberapa bagian dipertahankan) */
 .projects-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -223,4 +223,129 @@
     .task-meta {
         align-items: center;
     }
+}
+
+/* -------------------------------------------------
+   Overlay / Panel styles for project details
+   ------------------------------------------------- */
+.project-panel {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10,10,10,0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.project-panel.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.panel-inner {
+  width: 100%;
+  max-width: 820px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.panel-close {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.panel-inner h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.panel-inner p {
+  margin: 0 0 1rem 0;
+  color: #666;
+}
+
+/* items */
+.panel-items {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.panel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #eef2f6;
+  background: #fafbfd;
+}
+
+.panel-item-left strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+.panel-item-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.panel-item-right a.item-open {
+  text-decoration: none;
+  border: 1px solid #2c3e50;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: #2c3e50;
+  color: #fff;
+}
+
+.panel-item-right a.item-open:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* panel actions */
+.panel-actions {
+  margin-top: 1.2rem;
+  text-align: right;
+}
+
+.panel-actions .back-btn {
+  background: transparent;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.panel-actions .back-btn:hover {
+  background: #2c3e50;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* small screens: full width panel */
+@media (max-width: 600px) {
+  .panel-inner {
+    padding: 1rem;
+  }
 }

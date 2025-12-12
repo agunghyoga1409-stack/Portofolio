@@ -16,11 +16,12 @@
         </div>
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#profile">Profile</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#gallery">Gallery</a></li>
-          <li><a href="index.html#contact">Kontak</a></li>
-          <li><a href="projects.html" class="active">Project</a></li>
+                <li><a href="profil.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="projects.html" class="active">Project</a></li>
+        
         </ul>
       </div>
     </nav>
@@ -31,7 +32,7 @@
         <h1>Daftar Project / Tugas</h1>
         <p>
           Berikut adalah daftar tugas pemrograman web yang telah saya buat. Klik "Buka" untuk
-          melihat detail setiap tugas.
+          melihat detail setiap tugas, lalu pilih "Latihan" atau "Soal/Tugas" untuk membuka output di tab baru.
         </p>
       </div>
     </section>
@@ -40,8 +41,8 @@
     <section class="projects-list">
       <div class="container">
         <div class="projects-grid">
-          <!-- Tugas 2 -->
-          <div class="task-card">
+          <!-- Each .task-card kept mostly as original, but .open-btn -> button with data-project -->
+          <div class="task-card" data-project="pertemuan_2">
             <div class="task-header">
               <h3>Tugas 2</h3>
               <span class="task-number">01</span>
@@ -54,30 +55,28 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_2/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 3 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_3">
             <div class="task-header">
               <h3>Tugas 3</h3>
               <span class="task-number">02</span>
             </div>
             <div class="task-content">
               <h4>Format Text dan Karakter Khusus</h4>
-              <p>Mempelajari format test dan karakter khusus pada program HTML</p>
+              <p>Mempelajari format teks dan karakter khusus pada program HTML</p>
               <div class="task-meta">
                 <span class="task-tech">🛠 HTML</span>
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_3/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 4 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_4">
             <div class="task-header">
               <h3>Tugas 4</h3>
               <span class="task-number">03</span>
@@ -90,12 +89,11 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_4/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 5 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_5">
             <div class="task-header">
               <h3>Tugas 5</h3>
               <span class="task-number">04</span>
@@ -108,12 +106,11 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 6 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_6">
             <div class="task-header">
               <h3>Tugas 6</h3>
               <span class="task-number">05</span>
@@ -126,12 +123,11 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_6/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 7 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_7">
             <div class="task-header">
               <h3>Tugas 7</h3>
               <span class="task-number">06</span>
@@ -144,30 +140,28 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_7/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 8 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_8">
             <div class="task-header">
               <h3>Tugas 8</h3>
               <span class="task-number">07</span>
             </div>
             <div class="task-content">
-              <h4>From</h4>
-              <p>Membuat from menggunakan program HTML.</p>
+              <h4>Form</h4>
+              <p>Membuat form menggunakan program HTML.</p>
               <div class="task-meta">
                 <span class="task-tech">🛠 HTML</span>
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_8/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 9 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_9">
             <div class="task-header">
               <h3>Tugas 9</h3>
               <span class="task-number">08</span>
@@ -180,12 +174,11 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_9/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
 
-          <!-- Tugas 10 -->
-          <div class="task-card">
+          <div class="task-card" data-project="pertemuan_10">
             <div class="task-header">
               <h3>Tugas 10</h3>
               <span class="task-number">09</span>
@@ -198,12 +191,29 @@
               </div>
             </div>
             <div class="task-action">
-              <a href="./pertemuan_10/index.html" class="open-btn">Buka</a>
+              <button class="open-btn" type="button">Buka</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Overlay / Detail Panel (hidden by default) -->
+    <div id="project-panel" class="project-panel" aria-hidden="true">
+      <div class="panel-inner">
+        <button id="panel-close" class="panel-close" aria-label="Tutup panel">✕</button>
+        <h2 id="panel-title">Judul Proyek</h2>
+        <p id="panel-desc">Pilih bagian yang ingin dibuka (membuka di tab baru).</p>
+
+        <div id="panel-items" class="panel-items">
+          <!-- items injected by JS -->
+        </div>
+
+        <div class="panel-actions">
+          <button id="panel-back" class="back-btn">← Kembali ke Project</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Back to Home -->
     <section class="back-home">
@@ -218,6 +228,142 @@
         <p>&copy; 2025 — Portfolio</p>
       </div>
     </footer>
+
+    <script>
+      // Data: definisikan struktur "Latihan" dan "Soal/Tugas" tiap project.
+      // Jika nama folder pertemuan berbeda, sesuaikan path di sini.
+      const projectData = {
+        "pertemuan_2": {
+          title: "Tugas 2 — Basic Tag HTML",
+          desc: "Latihan dasar tag HTML dan soal tugas.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Contoh Basic Tag", url: "./pertemuan_2/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 2 (Dokumen)", url: "./pertemuan_2/soal.html" }
+          ]
+        },
+        "pertemuan_3": {
+          title: "Tugas 3 — Format Text dan Karakter Khusus",
+          desc: "Latihan format teks dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Format Text", url: "./pertemuan_3/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 3", url: "./pertemuan_3/soal.html" }
+          ]
+        },
+        "pertemuan_4": {
+          title: "Tugas 4 — Gambar / Suara / Video",
+          desc: "Latihan media dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Media", url: "./pertemuan_4/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 4", url: "./pertemuan_4/soal.html" }
+          ]
+        },
+        "pertemuan_5": {
+          title: "Tugas 5 — HyperLink",
+          desc: "Latihan hyperlink dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Hyperlink", url: "./pertemuan_5/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 5", url: "./pertemuan_5/soal.html" }
+          ]
+        },
+        "pertemuan_6": {
+          title: "Tugas 6 — Bullet & List",
+          desc: "Latihan list dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - List", url: "./pertemuan_6/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 6", url: "./pertemuan_6/soal.html" }
+          ]
+        },
+        "pertemuan_7": {
+          title: "Tugas 7 — Tabel",
+          desc: "Latihan tabel dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Tabel", url: "./pertemuan_7/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 7", url: "./pertemuan_7/soal.html" }
+          ]
+        },
+        "pertemuan_8": {
+          title: "Tugas 8 — Form",
+          desc: "Latihan form dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Form", url: "./pertemuan_8/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 8", url: "./pertemuan_8/soal.html" }
+          ]
+        },
+        "pertemuan_9": {
+          title: "Tugas 9 — Frame",
+          desc: "Latihan frame dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Frame", url: "./pertemuan_9/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 9", url: "./pertemuan_9/soal.html" }
+          ]
+        },
+        "pertemuan_10": {
+          title: "Tugas 10 — Iframe",
+          desc: "Latihan iframe dan soal.",
+          items: [
+            { type: "Latihan 1", label: "Latihan - Iframe", url: "./pertemuan_10/index.html" },
+            { type: "Soal/Tugas", label: "Soal - Tugas 10", url: "./pertemuan_10/soal.html" }
+          ]
+        }
+      };
+
+      // Helper: open project panel
+      const panel = document.getElementById('project-panel');
+      const panelTitle = document.getElementById('panel-title');
+      const panelDesc = document.getElementById('panel-desc');
+      const panelItems = document.getElementById('panel-items');
+      const panelClose = document.getElementById('panel-close');
+      const panelBack = document.getElementById('panel-back');
+
+      function showPanel(projectKey) {
+        const data = projectData[projectKey];
+        if (!data) {
+          panelTitle.textContent = 'Proyek tidak ditemukan';
+          panelDesc.textContent = 'Data proyek belum tersedia.';
+          panelItems.innerHTML = '';
+        } else {
+          panelTitle.textContent = data.title;
+          panelDesc.textContent = data.desc;
+          panelItems.innerHTML = data.items.map(it => {
+            // Each item will open in new tab
+            return `<div class="panel-item">
+                      <div class="panel-item-left">
+                        <strong>${it.type}</strong>
+                        <div class="panel-item-label">${it.label}</div>
+                      </div>
+                      <div class="panel-item-right">
+                        <a class="item-open" href="${it.url}" target="_blank" rel="noopener">Buka (tab baru)</a>
+                      </div>
+                    </div>`;
+          }).join('');
+        }
+        panel.setAttribute('aria-hidden', 'false');
+        panel.classList.add('open');
+      }
+
+      function closePanel() {
+        panel.setAttribute('aria-hidden', 'true');
+        panel.classList.remove('open');
+      }
+
+      // Attach listeners to all open-btns
+      document.querySelectorAll('.task-card .open-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.task-card');
+          const projectKey = card && card.getAttribute('data-project');
+          showPanel(projectKey);
+        });
+      });
+
+      panelClose.addEventListener('click', closePanel);
+      panelBack.addEventListener('click', closePanel);
+
+      // Close panel on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && panel.classList.contains('open')) {
+          closePanel();
+        }
+      });
+    </script>
   </body>
 </html>
-
