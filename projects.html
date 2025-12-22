@@ -42,10 +42,27 @@
       <div class="container">
         <div class="projects-grid">
           <!-- Each .task-card kept mostly as original, but .open-btn -> button with data-project -->
+           <div class="task-card" data-project="pertemuan_1">
+            <div class="task-header">
+              <h3>Tugas 1</h3>
+              <span class="task-number">01</span>
+            </div>
+            <div class="task-content">
+              <h4>Pengenalan HTML</h4>
+              <p>Mengenal program html.</p>
+              <div class="task-meta">
+                <span class="task-tech">🛠 HTML</span>
+              </div>
+            </div>
+            <div class="task-action">
+              <button class="open-btn" type="button">Buka</button>
+            </div>
+          </div>
+
           <div class="task-card" data-project="pertemuan_2">
             <div class="task-header">
               <h3>Tugas 2</h3>
-              <span class="task-number">01</span>
+              <span class="task-number">02</span>
             </div>
             <div class="task-content">
               <h4>Basic Tag HTML</h4>
@@ -233,44 +250,61 @@
       // Data: definisikan struktur "Latihan" dan "Soal/Tugas" tiap project.
       // Jika nama folder pertemuan berbeda, sesuaikan path di sini.
       const projectData = {
+        "pertemuan_1": {
+          title: "Tugas 1 — Pengenalan HTML",
+          desc: "Pengenalan dasar program HTML.",
+          items: [
+            { type: "Tugas", label: "Tugas 1 - Pengenalan HTML", url: "./pertemuan_1/Tugas Pertemuan 1.pdf" },
+            
+          ]
+        },
         "pertemuan_2": {
           title: "Tugas 2 — Basic Tag HTML",
           desc: "Latihan dasar tag HTML dan soal tugas.",
           items: [
-            { type: "Latihan 1", label: "Latihan - Contoh Basic Tag", url: "./pertemuan_2/index.html" },
-            { type: "Soal/Tugas", label: "Soal - Tugas 2 (Dokumen)", url: "./pertemuan_2/soal.html" }
+            { type: "Tugas", label: "Tugas 1 - Pengenalan HTML", url: "./pertemuan_2/index.html" },
+            { type: "Latihan 1", label: "Latihan 1 ", url: "./pertemuan_2/Latihan/latihan1.html" },
+            { type: "Latihan 2", label: "Latihan 2 ", url: "./pertemuan_2/Latihan/latihan2.html" }
           ]
         },
         "pertemuan_3": {
           title: "Tugas 3 — Format Text dan Karakter Khusus",
           desc: "Latihan format teks dan soal.",
           items: [
-            { type: "Latihan 1", label: "Latihan - Format Text", url: "./pertemuan_3/index.html" },
-            { type: "Soal/Tugas", label: "Soal - Tugas 3", url: "./pertemuan_3/soal.html" }
+            { type: "Tugas", label: "Latihan - Format Text", url: "./pertemuan_3/index.html" },
+            { type: "Latihan 1", label: "Latihan 1 ", url: "./pertemuan_3/Latihan/latihan1.html" },
+            { type: "Latihan 2", label: "Latihan 2 ", url: "./pertemuan_3/Latihan/latihan2.html" }
           ]
         },
         "pertemuan_4": {
           title: "Tugas 4 — Gambar / Suara / Video",
           desc: "Latihan media dan soal.",
           items: [
-            { type: "Latihan 1", label: "Latihan - Media", url: "./pertemuan_4/index.html" },
-            { type: "Soal/Tugas", label: "Soal - Tugas 4", url: "./pertemuan_4/soal.html" }
+            { type: "Tugas", label: "Tugas", url: "./pertemuan_4/index.html" },
+            { type: "Latihan a", label: "Latihan a ", url: "./pertemuan_4/Latihan/a.html" },
+            { type: "Latihan b", label: "Latihan b ", url: "./pertemuan_4/Latihan/b.html" },
+            { type: "Latihan c", label: "Latihan c ", url: "./pertemuan_4/Latihan/c.html" },
+            { type: "Latihan 1", label: "Latihan 1 ", url: "./pertemuan_4/Latihan/latihan1.html" },
+            { type: "Latihan 2", label: "Latihan 2 ", url: "./pertemuan_4/Latihan/latihan2.html" },
+            { type: "Latihan 3", label: "Latihan 3 ", url: "./pertemuan_4/Latihan/latihan3.html" },
+            { type: "Latihan 4", label: "Latihan 4 ", url: "./pertemuan_4/Latihan/latihan2.html" },
+            { type: "Latihan 5", label: "Latihan 5 ", url: "./pertemuan_4/Latihan/latihan4.html" },
           ]
         },
         "pertemuan_5": {
           title: "Tugas 5 — HyperLink",
           desc: "Latihan hyperlink dan soal.",
           items: [
-            { type: "Latihan 1", label: "Latihan - Hyperlink", url: "./pertemuan_5/index.html" },
-            { type: "Soal/Tugas", label: "Soal - Tugas 5", url: "./pertemuan_5/soal.html" }
-          ]
+            { type: "Tugas", label: "Latihan - Hyperlink", url: "./pertemuan_5/index.html" }
+        ]
         },
         "pertemuan_6": {
           title: "Tugas 6 — Bullet & List",
           desc: "Latihan list dan soal.",
           items: [
             { type: "Latihan 1", label: "Latihan - List", url: "./pertemuan_6/index.html" },
-            { type: "Soal/Tugas", label: "Soal - Tugas 6", url: "./pertemuan_6/soal.html" }
+             { type: "Latihan 1", label: "Latihan 1 ", url: "./pertemuan_6/Latihan/latihan1.html" },
+            { type: "Latihan 2", label: "Latihan 2 ", url: "./pertemuan_6/Latihan/latihan2.html" }
           ]
         },
         "pertemuan_7": {
